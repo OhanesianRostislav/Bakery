@@ -1,12 +1,59 @@
+/* roots */
+:root {
+    --brand-light: rgba(129, 155, 87, 1);
+    --brand-dark: rgba(70, 89, 41, 1);
+    --primary-light: rgba(250, 244, 234, 1);
+    --primary-dark: rgba(49, 38, 26, 1);
+}
+
+/* basic styles */
+body {
+    color: var(--primary-dark);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* hero section */
+.hero-title {
+    color: var(--primary-light);
+}
+
+.hero-title .accent {
+    color: var(--brand-light);
+}
+
+/* advantages section*/
+.advantages-list {
+    color: var(--primary-light);
+    background: var(--brand-light);
+}
+
+/* titles section */
+.section-title .accent {
+    color: var(--brand-dark);
+}
+
+/* buttons */
 .button {
-    color: rgba(250, 244, 234, 1);
-    background-color: rgba(129, 155, 87, 1);
-    border: 2px solid rgba(129, 155, 87, 1);
+    color: var(--primary-light);
+    background-color: var(--brand-light);
+    border: 2px solid var(--brand-light);
     border-radius: 8px;
     cursor: pointer;
 }
 
 .button:hover {
-    color: rgba(70, 89, 41, 1);
+    color: var(--brand-dark);
     background-color: transparent;
+}
+
+/* links */
+.link {
+    color: var(--primary-light);
+}
+
+.link:hover {
+    color: var(--brand-light);
 }
