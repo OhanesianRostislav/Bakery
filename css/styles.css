@@ -37,7 +37,9 @@
 }
 
 /* basic styles */
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -58,6 +60,10 @@ h5,
 h6,
 p {
     margin-top: 0;
+}
+
+a {
+    display: inline-block;
 }
 
 address {
@@ -229,7 +235,8 @@ ul {
 
 .chiefs-list {
     display: flex;
-    gap: 30px;
+    gap: 40px 30px;
+    flex-wrap: wrap;
 }
 
 .chiefs-item {
@@ -239,6 +246,14 @@ ul {
 .chief-card {
     display: flex;
     gap: 30px;
+}
+
+.chief-text p {
+    margin-bottom: 24px;
+}
+
+.chief-text p:last-child {
+    margin-bottom: 0;
 }
 
 /* Formats section */
@@ -324,6 +339,10 @@ ul {
     border-radius: 16px;
 }
 
+.contact-section {
+    padding-bottom: 96px;
+}
+
 /* footer */
 .footer {
     background-image: url('../images/footer-bcg.png');
@@ -331,6 +350,29 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 32px 0;
+}
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
 }
 
 .address-link {
@@ -346,6 +388,7 @@ ul {
 
 .address-copyright {
     font-size: 14px;
+    color: rgba(162, 130, 104, 1);
 }
 
 .address-social {

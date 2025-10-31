@@ -76,15 +76,17 @@
                             <img class="chief-photo" src="./images/nastya.jpg" alt="Шеф-кухар Настя">
                             <div>
                                 <h3 class="chief-title">Настя</h3>
-                                <p class="chief-text">Привіт, я Настя!</p>
-                                <p class="chief-text">
-                                    Вже 10 років, я втілюю <br>
-                                    у життя цікаві та смачні ідеї.
-                                </p>
-                                <p class="chief-text">
-                                    Я випічу для вас <br>
-                                    найсмачніщі вироби!
-                                </p>
+                                <div class="chief-text">
+                                    <p>Привіт, я Настя!</p>
+                                    <p>
+                                        Вже 10 років, я втілюю <br>
+                                        у життя цікаві та смачні ідеї.
+                                    </p>
+                                    <p>
+                                        Я випічу для вас <br>
+                                        найсмачніщі вироби!
+                                    </p>
+                                </div>
                             </div>
                         </article>
                     </li>
@@ -93,14 +95,17 @@
                             <img class="chief-photo" src="./images/vlad.jpg" alt="Шеф-кухар Влад">
                             <div>
                                 <h3 class="chief-title">Влад</h3>
-                                <p class="chief-text">Привіт, я Влад!</p>
-                                <p class="chief-text">Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з
-                                    якою ми ділимось
-                                    кожен
-                                    раз
-                                    з
-                                    Вами через нашу випічку!</p>
-                                <p class="chief-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+                                <div class="chief-text">
+                                    <p>Привіт, я Влад!</p>
+                                    <p>Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                                        любов, з
+                                        якою ми ділимось
+                                        кожен
+                                        раз
+                                        з
+                                        Вами через нашу випічку!</p>
+                                    <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                                </div>
                             </div>
                         </article>
                     </li>
@@ -159,7 +164,7 @@
                 </div>
             </div>
         </section>
-        <section class="section" id="contacts_section">
+        <section class=" contact-section section" id="contacts_section">
             <div class="container">
                 <div class="contact-container">
                     <div class="contact-form">
@@ -177,49 +182,56 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <nav>
-                <a href="#">
-                    <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
-                </a>
-                <ul>
-                    <li><a class="link" href="#traditions_section">Наші традиції</a></li>
-                    <li><a class="link" href="#chiefs_section">Шеф-кухарі</a></li>
-                    <li><a class="link" href="#formats_section">Формати</a></li>
-                    <li><a class="link" href="#contacts_section">Контакти</a></li>
-                </ul>
-            </nav>
-            <address>
-                <ul>
-                    <li>
-                        <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
-                    </li>
-                    <li>
-                        <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
-                    </li>
-                    <li>
-                        <a class="address-link" href="https://share.google/iDbCccpzHPwUBdqh8" target="_blank">Україна,
-                            м.
-                            Київ, вул.Січових
-                            Стрільців 54</a>
-                    </li>
-                    <li>
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <div class="footer-logo">
                         <a href="#">
-                            <svg class="address-social" width="32" height="32">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
+                            <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg class="address-social" width="32" height="32">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
-                <p class="address-copyright">&copy; 2022 Дані захищені</p>
-            </address>
+                    </div>
+                    <ul class="footer-menu">
+                        <li><a class="link" href="#traditions_section">Наші традиції</a></li>
+                        <li><a class="link" href="#chiefs_section">Шеф-кухарі</a></li>
+                        <li><a class="link" href="#formats_section">Формати</a></li>
+                        <li><a class="link" href="#contacts_section">Контакти</a></li>
+                    </ul>
+                </nav>
+                <address class="footer-address">
+                    <ul class="address-list">
+                        <li>
+                            <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+                        </li>
+                        <li>
+                            <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+                        </li>
+                        <li>
+                            <a class="address-link" href="https://share.google/iDbCccpzHPwUBdqh8"
+                                target="_blank">Україна,
+                                м.
+                                Київ, вул.Січових
+                                Стрільців 54</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="address-social" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="address-social" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="address-info">
+                        <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
+                        <p class="address-copyright">&copy; 2022 Дані захищені</p>
+                    </div>
+                </address>
+            </div>
         </div>
     </footer>
 </body>
