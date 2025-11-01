@@ -211,15 +211,24 @@ ul {
 /* Chiefs section */
 .chiefs-title::before,
 .chiefs-title::after {
+    position: absolute;
+    bottom: 24px;
     content: " ";
-    display: block;
     width: 352px;
     border: 2px solid var(--decor-green);
 }
 
+.chiefs-title::before {
+    left: 0;
+}
+
+.chiefs-title::after {
+    right: 0;
+}
+
 .chiefs-title {
     margin: 0 auto 80px;
-    max-width: 540px;
+    position: relative;
 }
 
 .chief-title {
@@ -351,7 +360,31 @@ ul {
     background-size: cover;
     background-position: center;
     padding: 32px 0;
+    position: relative;
 }
+
+.footer::after,
+.footer::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: '';
+}
+
+.footer::before {
+    background-image: url('../images/footer-right-bread.png');
+    width: 180px;
+    height: 120px;
+    left: 0;
+}
+
+.footer::after {
+    background-image: url('../images/footer-left-bread.png');
+    width: 380px;
+    height: 190px;
+    right: 0;
+}
+
 
 .footer-container {
     display: flex;
@@ -423,4 +456,35 @@ ul {
 
 .link:hover {
     color: var(--brand-light);
+}
+
+/* Modal*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--primary-light);
+    border-radius: 32px;
+}
+
+.backdrop.is-hidden {
+    display: none;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
