@@ -96,9 +96,41 @@ ul {
     padding: 0 24px;
 }
 
+/* buttons */
+.button {
+    padding: 16px 32px;
+    color: var(--primary-light);
+    background-color: var(--brand-light);
+    border: 2px solid var(--brand-light);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.button:hover {
+    color: var(--brand-light);
+    background-color: transparent;
+}
+
+/* links */
+.link {
+    color: var(--primary-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: var(--brand-light);
+}
+
 /* header */
 .header {
-    background-color: lightgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
 }
 
 .header-container {
@@ -124,7 +156,8 @@ ul {
 /* hero section */
 .hero-section {
     padding: 272px 0;
-    background-image: url('../images/hero-bcg.jpg');
+    background-image: linear-gradient(126.97deg, rgba(18.0625, 17.666563034057617, 17.234634399414062, 0.78), rgba(18.0625, 17.666563034057617, 17.234634399414062, 0.6) 64%, rgba(18.0625, 17.666563034057617, 17.234634399414062, 0) 100%),
+        url('../images/hero-bcg.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -286,7 +319,12 @@ ul {
     /* remove */
     padding: 18px;
     border-radius: 16px;
+    transition: transform 0.3s;
     background: linear-gradient(180.00deg, rgba(49, 37.999996185302734, 26, 0) 55%, rgba(49, 37.999996185302734, 26, 0.71) 73%, rgba(49, 38, 26, 1) 100%);
+}
+
+.format-card:hover {
+    transform: scale(1.05);
 }
 
 .formats-list {
@@ -325,6 +363,10 @@ ul {
     cursor: pointer;
     fill: var(--primary-dark);
     flex-shrink: 0;
+}
+
+.carousel-button.next {
+    transform: rotate(180.00deg);
 }
 
 .carousel-button:hover {
@@ -432,32 +474,6 @@ ul {
     fill: var(--brand-light);
 }
 
-/* buttons */
-.button {
-    padding: 16px 32px;
-    color: var(--primary-light);
-    background-color: var(--brand-light);
-    border: 2px solid var(--brand-light);
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.button:hover {
-    color: var(--brand-dark);
-    background-color: transparent;
-}
-
-/* links */
-.link {
-    color: var(--primary-light);
-    text-decoration: none;
-}
-
-.link:hover {
-    color: var(--brand-light);
-}
-
 /* Modal*/
 .backdrop {
     position: fixed;
@@ -469,18 +485,24 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .modal {
     position: relative;
-    width: 880px;
-    height: 880px;
+    width: 100%;
+    max-width: 880px;
+    max-height: 880px;
+    height: 100%;
     background-color: var(--primary-light);
     border-radius: 32px;
 }
 
 .backdrop.is-hidden {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal-btn-close {
