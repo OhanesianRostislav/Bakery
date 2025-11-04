@@ -1,0 +1,16 @@
+.hero-section {
+    padding: 272px 0;
+    background-image: linear-gradient(126.97deg, rgba(18.0625, 17.666563034057617, 17.234634399414062, 0.78), rgba(18.0625, 17.666563034057617, 17.234634399414062, 0.6) 64%, rgba(18.0625, 17.666563034057617, 17.234634399414062, 0) 100%),
+        url('../images/hero-bcg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    &__title {
+            margin-bottom: 0;
+            color: var(--primary-light);
+            text-align: center;
+            font-size: 128px;
+            font-weight: 900;
+        }
+}

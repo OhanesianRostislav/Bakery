@@ -1,0 +1,37 @@
+.chiefs-section{
+    &__title {
+            margin: 0 auto 80px;
+            position: relative;
+
+        &::before,
+        &::after {
+            position: absolute;
+            bottom: 24px;
+            content: " ";
+            width: 352px;
+            border: 2px solid var(--decor-green);
+        }
+    
+        &::before {
+            left: 0;
+        }
+    
+        &::after {
+            right: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px 30px;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        flex-basis: calc((100% - 40px) / 2);
+        margin-bottom: 96px;
+    }
+}
+
+
+
