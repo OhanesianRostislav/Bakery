@@ -1,34 +1,34 @@
 // components
-@import './components/buttons';
-@import './components/carousel-button';
-@import './components/chief-card';
-@import './components/format-card';
-@import './components/links';
-@import './components/form-terms';
-@import './components/input';
+@use './components/buttons' as*;
+@use './components/carousel-button' as*;
+@use './components/chief-card' as*;
+@use './components/format-card' as*;
+@use './components/links' as*;
+@use './components/form-terms' as*;
+@use './components/input' as*;
 
 // layouts
-@import './layouts/advantages';
-@import './layouts/chief';
-@import './layouts/contact';
-@import './layouts/container';
-@import './layouts/footer';
-@import './layouts/formats';
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/modal';
-@import './layouts/section';
-@import './layouts/traditions';
+@use './layouts/advantages' as*;
+@use './layouts/chief' as*;
+@use './layouts/contact' as*;
+@use './layouts/container' as*;
+@use './layouts/footer' as*;
+@use './layouts/formats' as*;
+@use './layouts/header' as*;
+@use './layouts/hero' as*;
+@use './layouts/modal' as*;
+@use './layouts/section' as*;
+@use './layouts/traditions' as*;
+@use './layouts/mobile-menu' as*;
 
 // utils
-@import './utils/fonts';
-@import './utils/mixin';
-@import './utils/utils';
-@import './utils/variables';
-@import './utils/texts';
+@use './utils/fonts' as*;
+@use './utils/mixin' as*;
+@use './utils/utils' as*;
+@use './utils/texts' as*;
+@use './utils/variables' as*;
 
-// base
-@import './base';
+@use './base' as*;
 
 /* footer */
 .footer {

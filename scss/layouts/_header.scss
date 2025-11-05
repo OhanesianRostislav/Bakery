@@ -1,9 +1,15 @@
+@use './variables' as*;
+
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 32px;
+    padding-top: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+            padding-top: 32px;
+        }
 
     &__container {
             display: flex;
@@ -19,10 +25,34 @@
         }
     
         &__menu {
-            display: flex;
-            gap: 64px;
-            flex-grow: 1;
-            justify-content: center;
+            display: none;
+
+            @media screen and (min-width: $bp-desktop) {
+                display: flex;
+                gap: 64px;
+                flex-grow: 1;
+                justify-content: center;
+                }
         }
+
+        &__button{
+            display: none;
+            @media screen and (min-width: $bp-desktop) {
+                display: block;
+                }
+        }
+
+        &__burger{
+            background-color: transparent;
+            border: none;
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            fill: var(--primary-light);
+        @media screen and (min-width: $bp-desktop) {
+                display: none;
+            }
+        }
+    
 }
 
