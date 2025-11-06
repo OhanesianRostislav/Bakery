@@ -1,21 +1,19 @@
-.formats-section{
+.formats-section {
     &__container {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-            margin-bottom: 96px;
-        }
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        margin-bottom: 96px;
+    }
 
-        &__list {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            max-width: 1087px;
-        }
-    
-        &__item {
-            flex-basis: calc((100% - 40px) / 3);
-        }
+    &__list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        max-width: 1087px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 40px) / 3);
+    }
 }
-
-

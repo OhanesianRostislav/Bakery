@@ -1,15 +1,26 @@
+@use './variables' as*;
+
 .chiefs-section{
     &__title {
-            margin: 0 auto 80px;
+            margin: 0 auto 24px;
             position: relative;
+
+            @media screen and (min-width: $bp-desktop) {
+                    margin-bottom: 80px;
+                }
 
         &::before,
         &::after {
+            display: none;
             position: absolute;
             bottom: 24px;
             content: " ";
             width: 352px;
             border: 2px solid var(--decor-green);
+
+            @media screen and (min-width: $bp-desktop) {
+                   display: block;
+                }
         }
     
         &::before {
@@ -23,13 +34,23 @@
 
     &__list {
         display: flex;
-        gap: 40px 30px;
+        flex-direction: column;
+        gap: 20px;
         flex-wrap: wrap;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+              gap: 40px 30px;
+            }
     }
     
     &__item {
-        flex-basis: calc((100% - 40px) / 2);
-        margin-bottom: 96px;
+
+        @media screen and (min-width: $bp-tablet){
+            flex-direction: row;
+            flex-basis: calc((100% - 40px) / 2);
+            margin-bottom: 96px;
+        }
     }
 }
 
