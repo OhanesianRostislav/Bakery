@@ -6,6 +6,7 @@
 @use './components/links' as*;
 @use './components/form-terms' as*;
 @use './components/input' as*;
+@use './components/pagination' as*;
 
 // layouts
 @use './layouts/advantages' as*;
@@ -29,89 +30,6 @@
 @use './utils/variables' as*;
 
 @use './base' as*;
-
-/* footer */
-.footer {
-    background-image: url('../images/footer-bcg.png');
-    background-color: var(--primary-dark);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 32px 0;
-    position: relative;
-}
-
-.footer::after,
-.footer::before {
-    position: absolute;
-    background-repeat: no-repeat;
-    bottom: 0;
-    content: '';
-}
-
-.footer::before {
-    background-image: url('../images/footer-right-bread.png');
-    width: 180px;
-    height: 120px;
-    left: 0;
-}
-
-.footer::after {
-    background-image: url('../images/footer-left-bread.png');
-    width: 380px;
-    height: 190px;
-    right: 0;
-}
-
-
-.footer-container {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-nav,
-.footer-address {
-    display: flex;
-    flex-basis: 50%;
-    gap: 20px;
-}
-
-.footer-logo,
-.footer-menu {
-    flex-grow: 1;
-}
-
-.address-list,
-.address-info {
-    flex-grow: 1;
-}
-
-.address-link {
-    color: var(--primary-light);
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-}
-
-.address-link:hover {
-    color: var(--brand-dark);
-}
-
-.address-copyright {
-    font-size: 14px;
-    color: rgba(162, 130, 104, 1);
-}
-
-.address-social {
-    fill: var(--primary-light);
-}
-
-.address-social:hover {
-    fill: var(--brand-light);
-}
-
-/* Modal*/
-
 
 /* имплементация с переходом лейбла плавно в верх
 
