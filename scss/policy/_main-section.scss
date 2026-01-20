@@ -1,0 +1,32 @@
+@use './variables' as*;
+
+.main-section{
+    &__title{
+        color: red;
+        margin: 0;
+    }
+
+    &__text{
+        color: var(--secondary-brown);
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__item{
+        margin-bottom: 10px;
+        color: var(--secondary-brown);
+    }
+
+    &__link{
+        color: var(--brand-light);
+    }
+
+    &__contacts{
+        color: var(--brand-light);
+    }
+}

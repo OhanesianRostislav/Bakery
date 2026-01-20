@@ -1,0 +1,11 @@
+@use './variables' as*;
+
+.header-section{
+    &__title{
+        color: var(--brand-light);
+    }
+
+    &__text{
+        color: var(--secondary-brown);
+    }
+}

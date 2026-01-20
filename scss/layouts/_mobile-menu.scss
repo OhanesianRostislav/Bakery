@@ -1,3 +1,5 @@
+@use './variables' as*;
+
 .mobile-menu{
     position: fixed;
     top: 0;
@@ -16,5 +18,15 @@
         position: absolute;
         top: 16px;
         right: 24px;
+    }
+
+    &__item{
+        color: var(--primary-dark);
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover{
+            color: var(--brand-light);
+        }
     }
 }

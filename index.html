@@ -32,7 +32,7 @@
                     </svg>
                 </button>
                 <div class="mobile-menu">
-                    <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button">#</button>
                 </div>
             </div>
         </div>
@@ -233,31 +233,36 @@
                     <div class="contact-section__form">
                         <h2 class="section__title contact-section__title">Приєднуйся до мережі пекарень</h2>
                         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-                        <form name="contact-form" autocomplete="on">
+                        <form id="contact-form" autocomplete="on">
 
                             <div class="contact-section__form-field input">
-                                <label class="input__label visually-hidden" for="user-name">Ім'я</label>
-                                <input class="input__control" id="user-name" type="text" name="user-name"
-                                    placeholder="Ім'я">
+                                <label class="input__label visually-hidden" for="contact-name">Ім'я</label>
+                                <input class="input__control" id="contact-name" type="text" name="name"
+                                    placeholder="Ім'я" required>
                             </div>
 
                             <div class="contact-section__form-field input">
-                                <label class="input__label visually-hidden" for="user-phone">Телефон</label>
-                                <input class="input__control" type="tel" name="user-phone" id="user-phone"
-                                    placeholder="Телефон">
+                                <label class="input__label visually-hidden" for="contact-phone">Телефон</label>
+                                <input class="input__control" id="contact-phone" type="tel" name="phone"
+                                    placeholder="Телефон" required>
                             </div>
 
                             <div class="contact-section__form-field input">
-                                <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
-                                <input class="input__control" type="email" name="user-email" id="user-email"
-                                    placeholder="Електронна пошта">
+                                <label class="input__label visually-hidden" for="contact-email">Електронна пошта</label>
+                                <input class="input__control" id="contact-email" type="email" name="email"
+                                    placeholder="Електронна пошта" required>
                             </div>
 
-                            <button class="button contact-section__button" type="submit">Замовити дзвінок</button>
-                            <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms__link"
-                                    href="#">з політикою
-                                    конфіденційності</a></p>
+                            <button class="button contact-section__button" type="submit">
+                                Замовити дзвінок
+                            </button>
+
+                            <p class="form-terms">
+                                Натискаючи на кнопку я погоджуюсь
+                                <a class="form-terms__link" href="./policy.html">з політикою конфіденційності</a>
+                            </p>
                         </form>
+
                     </div>
                     <iframe class="contact-section__map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.003781703418!2d30.488698376675053!3d50.456677571593325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e1!3m2!1sru!2ssk!4v1754831548620!5m2!1sru!2ssk"
@@ -291,7 +296,7 @@
                             </li>
                             <li>
                                 <a class="footer__address-link"
-                                    href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+                                    href="mailto:rostislavoganesan35@gmail.com">shopbakery@gmail.com</a>
                             </li>
                             <li>
                                 <a class="footer__address-link" href="https://share.google/iDbCccpzHPwUBdqh8"
@@ -319,7 +324,8 @@
                         </div>
                     </div>
                     <div class="footer__address-info">
-                        <a class="footer__address-link" href="#" target="_blank">Політика конфіденційності</a>
+                        <a class="footer__address-link" href="./policy.html" target="_blank">Політика
+                            конфіденційності</a>
                         <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
                     </div>
                 </address>
@@ -329,34 +335,38 @@
 
     <div class="backdrop hidden">
         <div class="modal">
-            <button class="modal__btn-close modal-btn-close" type="button">Close</button>
+            <button class="modal__btn-close modal-btn-close" type="button">X</button>
             <h2>Замовити дзвінок</h2>
             <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-            <form name="modal-form" autocomplete="on">
+            <form id="modal-form" autocomplete="on">
 
                 <div class="modal__form-field input">
-                    <label class="input__label visually-hidden" for="user-name">Ім'я</label>
-                    <input class="input__control" id="user-name" type="text" name="user-name" placeholder="Ім'я"
+                    <label class="input__label visually-hidden" for="modal-name">Ім'я</label>
+                    <input class="input__control" id="modal-name" type="text" name="name" placeholder="Ім'я" required>
+                </div>
+
+                <div class="modal__form-field input">
+                    <label class="input__label visually-hidden" for="modal-phone">Телефон</label>
+                    <input class="input__control" id="modal-phone" type="tel" name="phone" placeholder="Телефон"
                         required>
                 </div>
 
-                <div class="modal__form-field">
-                    <label class="input__label visually-hidden" for="user-phone">Телефон</label>
-                    <input class="input__control" type="tel" name="user-phone" id="user-phone" placeholder="Телефон"
-                        required>
-                </div>
-
-                <div class="modal__form-field">
-                    <label class="input__label visually-hidden" for="user-email">Електронна пошта</label>
-                    <input class="input__control" type="email" name="user-email" id="user-email"
+                <div class="modal__form-field input">
+                    <label class="input__label visually-hidden" for="modal-email">Електронна пошта</label>
+                    <input class="input__control" id="modal-email" type="email" name="email"
                         placeholder="Електронна пошта" required>
                 </div>
 
-                <button class="button modal__button" type="submit">Замовити дзвінок</button>
-                <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms__link" href="#">з
-                        політикою
-                        конфіденційності</a></p>
+                <button class="button modal__button" type="submit">
+                    Замовити дзвінок
+                </button>
+
+                <p class="form-terms">
+                    Натискаючи на кнопку я погоджуюсь
+                    <a class="form-terms__link" href="./policy.html">з політикою конфіденційності</a>
+                </p>
             </form>
+
         </div>
     </div>
 
@@ -364,6 +374,11 @@
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/formats-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("58ncHjahitYNsc0Rz");
+    </script>
+    <script src="./js/form.js"></script>
 
 </body>
 

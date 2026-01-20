@@ -1,3 +1,7 @@
+//policy 
+@use './policy/header-section' as*;
+@use './policy/main-section' as*;
+
 // components
 @use './components/buttons' as*;
 @use './components/carousel-button' as*;
@@ -7,6 +11,7 @@
 @use './components/form-terms' as*;
 @use './components/input' as*;
 @use './components/pagination' as*;
+@use './components/burger' as*;
 
 // layouts
 @use './layouts/advantages' as*;
