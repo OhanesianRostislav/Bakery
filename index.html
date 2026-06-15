@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop Bakery - сучасна пекарня зі свіжою випічкою, кавою, шеф-кухарями та форматами кафе для міста.">
     <title>Сучасна пекарня</title>
+    <link rel="icon" href="./images/logo.svg" type="image/svg+xml">
     <!-- styles -->
     <link rel="stylesheet" href="./scss/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -32,7 +35,14 @@
                     </svg>
                 </button>
                 <div class="mobile-menu">
-                    <button class="mobile-menu__btn-close menu-btn-close" type="button">#</button>
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button"
+                        aria-label="Закрити меню"></button>
+                    <ul class="mobile-menu__list">
+                        <li><a class="mobile-menu__item" href="#traditions_section">Наші традиції</a></li>
+                        <li><a class="mobile-menu__item" href="#chiefs_section">Шеф-кухарі</a></li>
+                        <li><a class="mobile-menu__item" href="#formats_section">Формати</a></li>
+                        <li><a class="mobile-menu__item" href="#contacts_section">Контакти</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -73,6 +83,7 @@
                                 замовлення готове.<br></span> А
                             ще у наших пекарень стильний дизайн<br> та висока якість обслуговування!
                         </p>
+                        <a class="button section-link-button" href="./bakery.html">Дізнатися більше</a>
                     </div>
                     <img class="traditions-section__image" src="./images/baker_man.jpg" alt="Пекар">
                 </div>
@@ -120,6 +131,27 @@
                         </article>
                     </li>
                 </ul>
+                <a class="button section-link-button chiefs-section__button" href="./chefs.html">Топ-повари</a>
+            </div>
+        </section>
+        <section class="section gallery-section" id="gallery_section">
+            <div class="container">
+                <h2 class="section__title section__title--centered">Наші вироби</h2>
+                <ul class="gallery-section__list">
+                    <li class="gallery-section__item">
+                        <img class="gallery-section__image" src="./images/wallrus.jpg" alt="Свіжа випічка у пекарні">
+                        <h3 class="gallery-section__title">Круасани</h3>
+                    </li>
+                    <li class="gallery-section__item">
+                        <img class="gallery-section__image" src="./images/horseshoe.jpg"
+                            alt="Хліб та десерти на вітрині">
+                        <h3 class="gallery-section__title">Хліб і десерти</h3>
+                    </li>
+                    <li class="gallery-section__item">
+                        <img class="gallery-section__image" src="./images/handlebar.jpg" alt="Кава та солодка випічка">
+                        <h3 class="gallery-section__title">Кава до випічки</h3>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="formats-section" id="formats_section">
@@ -144,6 +176,7 @@
                                         </p>
                                         <p>Посадкові місця: є</p>
                                     </div>
+                                    <a class="format-card__link" href="./walrus.html">Детальніше</a>
                                 </article>
                             </li>
                             <li class="swiper-slide">
@@ -157,6 +190,7 @@
                                         </p>
                                         <p>Посадкові місця: є</p>
                                     </div>
+                                    <a class="format-card__link" href="./horseshoe.html">Детальніше</a>
                                 </article>
                             </li>
                             <li class="swiper-slide">
@@ -170,6 +204,7 @@
                                         </p>
                                         <p>Посадкові місця: є</p>
                                     </div>
+                                    <a class="format-card__link" href="./handlebar.html">Детальніше</a>
                                 </article>
                             </li>
                             <li class="swiper-slide">
@@ -183,6 +218,7 @@
                                         </p>
                                         <p>Посадкові місця: є</p>
                                     </div>
+                                    <a class="format-card__link" href="./walrus.html">Детальніше</a>
                                 </article>
                             </li>
                             <li class="swiper-slide">
@@ -196,6 +232,7 @@
                                         </p>
                                         <p>Посадкові місця: є</p>
                                     </div>
+                                    <a class="format-card__link" href="./horseshoe.html">Детальніше</a>
                                 </article>
                             </li>
                             <li class="swiper-slide">
@@ -209,6 +246,7 @@
                                         </p>
                                         <p>Посадкові місця: є</p>
                                     </div>
+                                    <a class="format-card__link" href="./handlebar.html">Детальніше</a>
                                 </article>
                             </li>
                         </ul>
@@ -225,6 +263,29 @@
                         </svg>
                     </button>
                 </div>
+                <a class="button section-link-button formats-section__link" href="./formats.html">Опис форматів</a>
+            </div>
+        </section>
+        <section class="section reviews-section">
+            <div class="container">
+                <h2 class="section__title section__title--centered">Відгуки гостей</h2>
+                <ul class="reviews-section__list">
+                    <li class="reviews-section__item">
+                        <p class="reviews-section__text">"Найкращі круасани поруч з офісом. Завжди беру каву і щось
+                            свіже з вітрини."</p>
+                        <p class="reviews-section__author">Марина</p>
+                    </li>
+                    <li class="reviews-section__item">
+                        <p class="reviews-section__text">"Подобається швидкість обслуговування і те, що випічка тепла
+                            навіть ввечері."</p>
+                        <p class="reviews-section__author">Олександр</p>
+                    </li>
+                    <li class="reviews-section__item">
+                        <p class="reviews-section__text">"Затишне місце для сімейного сніданку. Діти обожнюють булочки з
+                            какао."</p>
+                        <p class="reviews-section__author">Ірина</p>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class=" contact-section section" id="contacts_section">
@@ -256,6 +317,7 @@
                             <button class="button contact-section__button" type="submit">
                                 Замовити дзвінок
                             </button>
+                            <p class="form-status" aria-live="polite"></p>
 
                             <p class="form-terms">
                                 Натискаючи на кнопку я погоджуюсь
@@ -326,16 +388,16 @@
                     <div class="footer__address-info">
                         <a class="footer__address-link" href="./policy.html" target="_blank">Політика
                             конфіденційності</a>
-                        <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
+                        <p class="footer__address-copyright">&copy; 2026 Дані захищені</p>
                     </div>
                 </address>
             </div>
         </div>
     </footer>
 
-    <div class="backdrop hidden">
+    <div class="backdrop is-hidden">
         <div class="modal">
-            <button class="modal__btn-close modal-btn-close" type="button">X</button>
+            <button class="modal__btn-close modal-btn-close" type="button" aria-label="Закрити форму"></button>
             <h2>Замовити дзвінок</h2>
             <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
             <form id="modal-form" autocomplete="on">
@@ -360,6 +422,7 @@
                 <button class="button modal__button" type="submit">
                     Замовити дзвінок
                 </button>
+                <p class="form-status" aria-live="polite"></p>
 
                 <p class="form-terms">
                     Натискаючи на кнопку я погоджуюсь

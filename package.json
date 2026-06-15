@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build:css": "sass scss/main.scss scss/main.min.css --style=compressed --source-map",
+    "watch:css": "sass scss/main.scss scss/main.min.css --style=compressed --source-map --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
